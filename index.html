@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OU Harju Õigusbüroo — Legal Services, Professional, Scientific, and Technical Services</title>
+  <meta name="description" content="OU Harju Õigusbüroo — õigusabi ja professionaalsed, teaduslikud ning tehnilised teenused. Tallinn, Harjumaa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1220;
+      --card:#161a2b;
+      --muted:#8b91a5;
+      --brand:#c23b3b;
+      --accent:#26c6da;
+      --text:#e9ecf5;
+      --soft:#f2f5ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    header, section, footer{padding:56px 20px}
+    .wrap{max-width:1180px; margin:0 auto}
+    .badge{display:inline-block; padding:6px 10px; border:1px solid #2a314b; border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.04em; text-transform:uppercase}
+    h1,h2{font-family:"Playfair Display",serif; margin:0 0 14px}
+    h1{font-size:44px; line-height:1.15; letter-spacing:.2px}
+    h2{font-size:34px}
+    .sub{color:var(--muted); margin:0 0 28px}
+    .hero{
+      background:
+        radial-gradient(1200px 600px at 80% -20%, rgba(38,198,218,.12), transparent 60%),
+        radial-gradient(800px 400px at 10% 120%, rgba(194,59,59,.16), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.12));
+      padding-top:84px; padding-bottom:84px;
+    }
+    .hero .cta{display:flex; gap:12px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:12px 18px; border-radius:12px; font-weight:600;
+      border:1px solid transparent; cursor:pointer
+    }
+    .btn-primary{background:var(--brand); color:#fff}
+    .btn-ghost{background:transparent; border-color:#2a314b; color:var(--text)}
+    .grid{display:grid; gap:20px}
+    .g-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .g-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media(max-width:920px){.g-2,.g-3{grid-template-columns:1fr}}
+    .card{
+      background:var(--card); border:1px solid #1f2440; border-radius:18px; padding:22px;
+      box-shadow:0 10px 30px rgba(0,0,0,.18)
+    }
+    .card h3{margin:6px 0 6px; font-size:20px}
+    .list{margin:0; padding-left:18px}
+    .step{display:flex; gap:14px; align-items:flex-start}
+    .step .no{
+      min-width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(135deg,var(--brand),#842323); font-weight:700
+    }
+    .muted{color:var(--muted)}
+    .form{
+      display:grid; gap:14px;
+      grid-template-columns:repeat(2,minmax(0,1fr))
+    }
+    .form .wide{grid-column:1/-1}
+    input, textarea{
+      width:100%; background:#0b0e1a; color:var(--text);
+      border:1px solid #2a314b; border-radius:12px; padding:12px 14px; font:inherit
+    }
+    textarea{min-height:120px; resize:vertical}
+    .success{
+      display:none; margin-top:12px; background:#0b2a1a; border:1px solid #2f7d57; color:#b6ffdd;
+      padding:12px 14px; border-radius:12px
+    }
+    footer{border-top:1px solid #1f2440; color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <!-- 1. Hero / Главный экран -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="badge">Õigus, teadus & tehnika</div>
+      <h1>Harju Õigusbüroo — usaldusväärne partner keerukates küsimustes</h1>
+      <p class="sub">Pakume õigusabi ning professionaalseid, teaduslikke ja tehnilisi teenuseid ettevõtetele ja eraisikutele. Meie fookus on täpsusel, andmepõhisusel ja diskreetsusel — nii jõuate kindlalt õige tulemuseni.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-primary">Küsi personaalset pakkumist</a>
+        <a href="#about" class="btn btn-ghost">Vaata lähemalt</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. About / Про нас -->
+  <section id="about">
+    <div class="wrap">
+      <div class="badge">Kes me oleme</div>
+      <h2>Meie lugu ja tööstiil</h2>
+      <p class="sub">Harju Õigusbüroo ühendab juriidilise ekspertiisi, analüütilise mõtlemise ja tehnilise pädevuse.</p>
+      <div class="card">
+        <p>Oleme Tallinnas tegutsev meeskond, kes aitab klientidel langetada õigeid otsuseid, vähendada riske ja kiirendada protsesse. Tõlgime keerulised normid ja tehnilised nõuded selgeteks sammudeks. Kasutame kaasaegseid tööriistu tõendite kogumiseks, andmete kontrolliks ja dokumentide automatiseerimiseks. Meie lähenemine on pragmaatiline: keskendume tulemusele, mis on kooskõlas kliendi ärieesmärkidega. Iga kaasus saab pühendunud projektijuhtimise ning läbipaistva suhtluse. Usume, et õiglus, täpsus ja tehnoloogia peavad käima käsikäes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Services / Сервисы -->
+  <section id="services">
+    <div class="wrap">
+      <div class="badge">Mida me teeme</div>
+      <h2>Teenused, mis lahendavad päris probleeme</h2>
+      <p class="sub">Kolm põhisuunda, milles tegutseme igapäevaselt.</p>
+
+      <div class="grid g-3">
+        <div class="card">
+          <h3>Õigusnõustamine ja vaidluste lahendamine</h3>
+          <p>Koostame ja kontrollime lepinguid, anname hinnanguid ning esindame läbirääkimistel ja kohtus. Selgitame riskid ja valmistame ette strateegia, mis hoiab kulud kontrolli all. Fookuses on lahendus, mitte lõputu vaidlus.</p>
+        </div>
+
+        <div class="card">
+          <h3>Regulatiivne vastavus & andmekaitse</h3>
+          <p>Viime ettevõtted vastavusse EL ja Eesti nõuetega (GDPR, sektoripõhised juhised). Kaardistame andmevood, loome protseduurid ja koolitame tiime. Tulemuseks on tõendatav vastavus ja väiksem trahvirisk.</p>
+        </div>
+
+        <div class="card">
+          <h3>Teaduslik-tehniline ekspertiis</h3>
+          <p>Koostame eksperthinnanguid IP-, IT- ja tehnoloogiavaidlustes. Kasutame andmepõhist analüüsi ja selgeid visualiseeringuid, et keeruline saaks arusaadavaks. Toetame patenteerimist ja litsentsilepinguid.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Advantages / Преимущества + Почему мы -->
+  <section id="why">
+    <div class="wrap">
+      <div class="badge">Miks kliendid meid usaldavad</div>
+      <h2>Väärtus, mida toome lauale</h2>
+      <p class="sub">Mõõdetavad tulemused, läbipaistev protsess ja tehnoloogiline eelis.</p>
+
+      <div class="grid g-3">
+        <div class="card">
+          <h3>Tõenditel põhinev nõuanne</h3>
+          <p>Seome juriidika ja andmeanalüüsi: kontrollime fakte, auditeerime allikaid ja esitame järeldused koos alternatiividega. See vähendab ebakindlust ja hoiab vaidlused lühikesed.</p>
+        </div>
+        <div class="card">
+          <h3>Kiirus ilma kvaliteeti ohverdamata</h3>
+          <p>Standardiseeritud töövood ja automaatsed kontrollnimekirjad lühendavad tarneaegu. Teie saate vahearuanded ja selged „go/no-go” punktid igal etapil.</p>
+        </div>
+        <div class="card">
+          <h3>Diskreetsus ja vastutus</h3>
+          <p>Käsitleme infot rangete turvameetmetega ning sõlmime vajadusel NDA. Me ei lubadeta võimatut — anname realistliku pildi ja seisame tulemuse eest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Process / Процедура работы -->
+  <section id="process">
+    <div class="wrap">
+      <div class="badge">Kuidas me töötame</div>
+      <h2>Selge kolmeetapiline protsess</h2>
+      <p class="sub">Struktureeritud sammud, et jõuaksime kiiresti sisuni.</p>
+
+      <div class="grid">
+        <div class="card step">
+          <div class="no">1</div>
+          <div>
+            <h3>Diagnoos & suunad</h3>
+            <p>Algintervjuu ja dokumentide esmane ülevaade. Sõnastame eesmärgi, riskid ja mõõdikud ning lepime kokku tähtaegades.</p>
+          </div>
+        </div>
+
+        <div class="card step">
+          <div class="no">2</div>
+          <div>
+            <h3>Tõendid & strateegia</h3>
+            <p>Kogume tõendid, teeme õigusliku ja tehnilise analüüsi, koostame variandid A/B. Kliendiga kinnitame tegevusplaani.</p>
+          </div>
+        </div>
+
+        <div class="card step">
+          <div class="no">3</div>
+          <div>
+            <h3>Teostus & kaitse</h3>
+            <p>Koostame dokumendid, esindame läbirääkimistel/menetlustes, jälgime tähtaegu. Edastame kokkuvõtte ja soovitused edasiseks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Contact form phrases / Фразы для контактной формы -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="badge">Võtame ühendust</div>
+      <h2>Küsi nõu või saada päring</h2>
+      <p class="sub">Allpool fraasid ja väljad, mida kasutame kontaktivormis.</p>
+
+      <div class="card">
+        <form class="form" onsubmit="event.preventDefault();document.getElementById('ok').style.display='block';">
+          <div>
+            <label class="muted">Teie nimi</label>
+            <input type="text" placeholder="Sisestage nimi" required>
+          </div>
+          <div>
+            <label class="muted">E-post</label>
+            <input type="email" placeholder="nimi@ettevote.ee" required>
+          </div>
+          <div>
+            <label class="muted">Teema</label>
+            <input type="text" placeholder="Lühikirjeldus teemast (nt leping, vaidlus)">
+          </div>
+          <div>
+            <label class="muted">Eelistatud kontakt</label>
+            <input type="text" placeholder="Telefon või e-post, sobiv aeg">
+          </div>
+          <div class="wide">
+            <label class="muted">Sõnum</label>
+            <textarea placeholder="Kirjeldage olukorda, tähtaegu ja sihte."></textarea>
+          </div>
+          <div class="wide">
+            <button class="btn btn-primary" type="submit">Saada päring</button>
+            <span class="muted" style="margin-left:10px">Saatmisega nõustute privaatsustingimustega.</span>
+            <div id="ok" class="success">Aitäh! Teie päring on edukalt saadetud. Võtame teiega peatselt ühendust.</div>
+          </div>
+        </form>
+
+        <!-- Фразы для текстов/плейсхолдеров -->
+        <ul class="list muted" style="margin-top:16px">
+          <li>„Kirjeldage lühidalt oma juhtumit ja soovitud tulemust.”</li>
+          <li>„Lisage tähtajad ja olulised dokumendid (kui on).”</li>
+          <li>„Valige, kuidas ja millal saame teiega ühendust võtta.”</li>
+          <li>„Kõik edastatud andmed on konfidentsiaalsed.”</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Contacts / Контакты -->
+  <footer>
+    <div class="wrap">
+      <div class="badge">Kontakt</div>
+      <p><strong>OU Harju Õigusbüroo</strong></p>
+      <p>Aadress: Kaupmehe tn 8-4, Tallinn, Harjumaa, 10114, Estonia</p>
+      <p>E-post: <a href="mailto:jurrbsad@zohomail.eu">jurrbsad@zohomail.eu</a></p>
+      <p class="muted">© <span id="y"></span> Harju Õigusbüroo. Kõik õigused kaitstud.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
